@@ -18,7 +18,7 @@ The application carries out the following actions:
 
 * useContext and useState for managing app wide and component based state.
 
-* Suspense and Lazy for enaacting lazy loading of pages for app perfomance based enchanement.
+* Suspense and Lazy for enacting lazy loading of pages for app perfomance based enchanement.
 
 * useEffect, useCallback and useMemo for handling the rendering state amd sideeffects.
 
