@@ -30,9 +30,9 @@ The application carries out the following actions:
 Developers are free to use and contribute to this project by just following the simple steps below:
 1. Clone the repository and install dependencies
 `
-git clone https://github.com/Fransco35/UsersGallery.git
-cd UsersGallery
-npm install
+* git clone https://github.com/Fransco35/UsersGallery.git
+* cd UsersGallery
+* npm install
 `
 2. Run the start script using npm to start the application in your local server
 `
