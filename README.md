@@ -8,27 +8,25 @@ Users Gallery is an application that presents a random list of cards containing 
 
 
 The application carries out the following actions:
-*Getting and conversion to json of users details via API using the fetch method.
-*User login authentication using localstorage.
-*Built in pagination to browse through gallery list.
-*Selection of favorite users upon authentication in a seperate list from the general profile list.
-*Search functionality to filter through users and return a specified user/users.
+* Getting and conversion to json of users details via API using the fetch method.
+* User login authentication using localstorage.
+* Built in pagination to browse through gallery list.
+* Selection of favorite users upon authentication in a seperate list from the general profile list.
+* Search functionality to filter through users and return a specified user/users.
 
 ### React technologies used ###
 
-*useContext and useState for managing app wide and component based state.
+* useContext and useState for managing app wide and component based state.
 
+* Suspense and Lazy for enaacting lazy loading of pages for app perfomance based enchanement.
 
-*Suspense and Lazy for enaacting lazy loading of pages for app perfomance based enchanement.
+* useEffect, useCallback and useMemo for handling the rendering state amd sideeffects.
 
+* useRef for getting input values.
 
-*useEffect, useCallback and useMemo for handling the rendering state amd sideeffects.
+* Switch, Route, useHistory and BrowseRouter from react-router-dom that handles the routing of the applications pages.
 
-
-*useRef for getting input values.
-*Switch, Route, useHistory and BrowseRouter from react-router-dom that handles the routing of the applications pages.
-
-##Getting Started Locally
+## Getting Started Locally ##
 Developers are free to use and contribute to this project by just following the simple steps below:
 1. Clone the repository and install dependencies
 `
