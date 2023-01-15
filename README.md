@@ -1,10 +1,10 @@
-#Users Gallery#
+# Users Gallery #
 
 
 ![Profile Gallery - Google Chrome 1_15_2023 6_39_14 PM](https://user-images.githubusercontent.com/62514538/212557504-492ae056-7d64-4512-9b0b-30fe998547f1.png)
 Users Gallery is an application that presents a random list of cards containing individuals' names, images, usernames, age and other information associated with each of them. It is built solely with React.js 
 
-##What It does##
+## What It does ##
 
 
 The application carries out the following actions:
@@ -14,7 +14,8 @@ The application carries out the following actions:
 *Selection of favorite users upon authentication in a seperate list from the general profile list.
 *Search functionality to filter through users and return a specified user/users.
 
-###React technologies used###
+### React technologies used ###
+
 *useContext and useState for managing app wide and component based state.
 
 
