@@ -1,6 +1,7 @@
 
   .navbar {
-    background-color: #000;
+    background-color: #292a2d;
+    border-bottom: 2px solid #4b6faf;
     height: 70px;
     display: flex;
     justify-content: center;
@@ -30,13 +31,14 @@
   }
   
   .nav-logo {
-    color: skyblue;
+    color: #4b6faf;
     align-items: center;
     margin-left: 20px;
     cursor: pointer;
     text-align: left;
     text-decoration: none;
     font-size: 2.5rem;
+    font-weight: bold;
     flex-grow: 1;
   }
   
@@ -74,12 +76,11 @@
   
   .nav-item:hover:after {
     width: 100%;
-    background: skyblue;
+    background: #87ceeb;
   }
   
   .nav-item.active {
-    color: #ffdd40;
-    border: 1px solid skyblue;
+    border: 1px solid #87ceeb;
   }
   
   .nav-icon {
@@ -109,7 +110,7 @@
       z-index: 1;
     }
     .nav-item .active {
-      color: skyblue;
+      color: #4b6faf;
       border: none;
     }
     .nav-links {
@@ -126,6 +127,6 @@
       transform: translate(-100%, 60%);
       font-size: 1.8rem;
       cursor: pointer;
-      color: skyblue;
+      color: #4b6faf;
     }
   }

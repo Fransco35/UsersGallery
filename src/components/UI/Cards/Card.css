@@ -1,0 +1,175 @@
+ 
+.card {
+    height: 45rem;
+    width: 28rem;
+    margin: 1rem auto;
+    border-radius: 25px;
+    position: relative;
+    perspective: 120rem;
+}
+
+
+.card__side {
+    height:45rem;
+    transition: all 0.8s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 5px 5px 10px #000;
+
+}
+
+@media screen and (max-width:320px) {
+    .card {
+      height: 43rem;
+      width: 24rem;
+    }
+    .card__side {
+      height: 43rem;
+    }
+}
+
+figure{
+    position: relative;
+    width: 100%;
+}
+
+figcaption {
+    position: absolute;
+    top: 93%;
+    background-color: azure;
+    width: 70%;
+    font-size: 1.5rem;
+}
+
+figure img {
+    width: 100%;
+}
+
+.card-info {
+    position: relative;
+    padding: 0.5rem;
+    
+}
+
+.card-info ul {
+    list-style: none;
+    margin: 0 auto;
+}
+
+.card-info li {
+    padding: 7px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.card-info li:not(:last-child) {
+    border-bottom: 1px solid #eee;
+}
+
+.card__side--front{
+    background-color: #8AB4F8;
+    border-radius: 25px;
+}
+
+  .card__side--back {
+      border-radius: 25px;
+      transform: rotateY(180deg);
+      background-image: linear-gradient(
+      to right bottom,
+      #87ceeb,
+      #69aac3
+    );
+  }
+
+
+  /* back */
+  .card:hover .card__side--front {
+    transform: rotateY(-180deg);
+  }
+
+  .card:hover .card__side--back {
+    transform: rotateY(0);
+  }
+
+  .card__cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center;
+  }
+
+  /* Button */
+  .btn--animated {
+    animation: moveInBottom 3s;
+  }
+
+  .btn,
+  .btn:link,
+  .btn:visited {
+    border: none;
+    border-radius: 10rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.5rem 4rem;
+    position: relative;
+    display: inline-block;
+    transition: all 0.2s;
+  }
+
+  .btn:hover {
+    box-shadow: 0 1rem 2rem rgba(#000, 0.2);
+    transform: translateY(-0.3rem);
+  }
+
+  .btn:hover::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+    }
+
+  .btn:active {
+    box-shadow: 0 0.5rem 1rem rgba(#000, 0.2);
+    transform: translateY(-0.1rem);
+  }
+
+  .btn--white {
+    background-color: #fff;
+    color: #777;
+  }
+
+  .btn--black {
+    background-color: #292a2d;
+    color: #4b6faf;
+  }
+
+  .btn--white::after {
+      background-color: #fff;
+    }
+
+    .btn--black::after {
+      background-color: #292a2d;
+    }
+
+  
+  .btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
+  }
+
+  

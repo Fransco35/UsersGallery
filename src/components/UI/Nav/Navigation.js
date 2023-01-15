@@ -1,9 +1,11 @@
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 import { NavLink } from 'react-router-dom';
+import AuthContext from '../../../context/auth-context';
 
 import "./Navigation.css"
 
 function NavBar() {
+ const AuthCtx = useContext(AuthContext)
   const [click, setClick] = useState(false);
 
   const handleClick = () => setClick(!click);
@@ -15,7 +17,7 @@ function NavBar() {
       <nav className="navbar" onClick={e => e.stopPropagation()}>
         <div className="nav-container">
           <NavLink exact to="/" className="nav-logo">
-            Gallery
+            PROFILES
           </NavLink>
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">
@@ -29,38 +31,34 @@ function NavBar() {
                 Home
               </NavLink>
             </li>
+            {AuthCtx.isLoggedIn &&
             <li className="nav-item">
               <NavLink
                 exact
-                to="/about"
+                to="/favourites"
                 activeClassName="active"
                 className="nav-links"
                 onClick={click ? handleClick : null}
               >
-                P2
+                Favorites
               </NavLink>
             </li>
+            }
             <li className="nav-item">
+              {!AuthCtx.isLoggedIn && 
               <NavLink
                 exact
-                to="/blog"
+                to="/login"
                 activeClassName="active"
                 className="nav-links"
                 onClick={click ? handleClick : null}
               >
-                P3
+                Login
               </NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink
-                exact
-                to="/contact"
-                activeClassName="active"
-                className="nav-links"
-               onClick={click ? handleClick : null}
-              >
-                P4
-              </NavLink>
+              }
+              {AuthCtx.isLoggedIn && 
+               <button className='btn' onClick={AuthCtx.onLogOut}>Logout</button>
+              }
             </li>
           </ul>
           <div className="nav-icon" onClick={handleClick}>
