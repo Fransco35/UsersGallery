@@ -5,7 +5,7 @@
 
 https://usersgallery.web.app/
 
-Users Gallery is an application that presents a random list of cards containing individuals' names, images, usernames, age and other information associated with each of them. It is built solely with React.js 
+Users Gallery is an application that presents a list of cards containing random individuals' names, images, usernames, age and other information associated with each of them. It is built solely with React.js 
 
 ## What It does ##
 
