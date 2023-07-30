@@ -11,7 +11,7 @@ Users Gallery is an application that presents a list of cards containing random 
 
 
 The application carries out the following actions:
-* Getting and conversion to json of users details via API using the fetch method.
+* Fetching users details via API using the fetch method.
 * User login authentication using localstorage.
 * Built in pagination to browse through gallery list.
 * Selection of favorite users upon authentication in a seperate list from the general profile list.
